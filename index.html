@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejati - Makaroni Kering Terbaik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FF8C42; /* Oranye modern */
+            --secondary-color: #FDF6EC; /* Background terang */
+            --text-color: #333333; /* Teks gelap */
+            --accent-color: #FFD1A3; /* Aksen oranye lembut */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Onest', sans-serif;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            max-width: 1200px;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .hero button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: var(--accent-color);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sejati</h1>
+        <nav>
+            <a href="#about">Tentang</a>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Makaroni Kering Sejati</h2>
+        <p>Nikmati kelezatan makaroni kering premium yang gurih, renyah, dan dibuat dengan bahan-bahan terbaik. Pilihan camilan terbaik untuk Anda!</p>
+        <button>Pesan Sekarang</button>
+    </section>
+
+    <section id="produk" class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200" alt="Makaroni Pedas">
+            <h3>Makaroni Pedas</h3>
+            <p>Makaroni dengan rasa pedas yang menggugah selera. Cocok untuk pecinta pedas!</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200" alt="Makaroni Keju">
+            <h3>Makaroni Keju</h3>
+            <p>Lezatnya makaroni dengan taburan keju gurih yang meleleh di mulut.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300x200" alt="Makaroni Original">
+            <h3>Makaroni Original</h3>
+            <p>Rasa klasik yang tak pernah salah. Gurih dan renyah!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sejati. Dibuat dengan <span style="color: red;">❤️</span> untuk Anda. <a href="#kontak">Hubungi Kami</a></p>
+    </footer>
+</body>
+
+</html>
