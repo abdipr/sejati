@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #FF8C42; /* Oranye modern */
-            --secondary-color: #FDF6EC; /* Background terang */
-            --text-color: #333333; /* Teks gelap */
-            --accent-color: #FFD1A3; /* Aksen oranye lembut */
+            --primary-color: #FF8C42;
+            --secondary-color: #FDF6EC;
+            --text-color: #333333;
+            --accent-color: #FFD1A3;
         }
 
         * {
@@ -33,10 +33,12 @@
         header {
             width: 100%;
             background-color: var(--primary-color);
-            padding: 1rem 2rem;
+            padding: 0.8rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            z-index: 1000;
         }
 
         header h1 {
@@ -83,6 +85,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
 
         .hero button:hover {
@@ -101,15 +104,21 @@
         .feature {
             background-color: white;
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: all 0.3s ease
+        }
+        .feature:hover {
+            transform: translate(0, -8px);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
         }
 
         .feature img {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
+            border-radius: 5px;
         }
 
         .feature h3 {
@@ -172,8 +181,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Sejati. Dibuat dengan <span style="color: red;">❤️</span> untuk kamu <a href="#kontak">Hubungi Kami</a></p>
+        <p>&copy; 2024 Sejati. Dibuat dengan <span style="color: red;">❤️</span> untuk kamu. <a href="#kontak">Hubungi Kami</a></p>
     </footer>
 </body>
-
 </html>
